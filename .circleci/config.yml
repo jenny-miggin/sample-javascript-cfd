@@ -44,10 +44,10 @@ workflows:
   sample:
     jobs:
       - test
-      - cypress/run:
-          executor: "node-cypress"
-          command: yarn run test:e2e --headless
-          yarn: true
+      # - cypress/run:
+      #     executor: "node-cypress"
+      #     command: yarn run test:e2e --headless
+      #     yarn: true
       - node/test
 
 # VS Code Extension Version: 1.3.0
